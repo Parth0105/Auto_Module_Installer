@@ -1,2 +1,3 @@
 # pro1
-python project to install modules
+Python project to install modules automtically without going to the terminal
+
