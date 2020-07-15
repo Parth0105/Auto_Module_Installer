@@ -13,6 +13,7 @@ l3=Label(root,text='ENTER THE NAME OF MODULE:').pack()
 e=Entry(root)
 e.pack()
 def bu():
+   subprocess.run('python -m pip install --upgrade pip')#updating pip to latest version
    p= subprocess.run('pip3 install '+e.get())
    if(p.returncode==1 and connect()==False):
       l=Label(root,text='error!!! occured check\n 1.NO Internet conection',fg="red").pack(side='bottom')
