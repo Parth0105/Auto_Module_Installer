@@ -3,7 +3,7 @@ import subprocess
 import urllib.request
 def connect(host='http://google.com',host2='http://github.com'):
     try:
-        urllib.request.urlopen(host) or urllib.request.urlopen(host2)
+        urllib.request.urlopen(host) or urllib.request.urlopen(host2)#alternate host if one goes down.
         return True
     except:
         return False
