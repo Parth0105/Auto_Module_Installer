@@ -1,5 +1,6 @@
 from tkinter import *
 import subprocess
+import requests
 import urllib.request
 def connect(host='http://google.com',host2='http://github.com'):
     try:
