@@ -1,9 +1,9 @@
 from tkinter import *
 import subprocess
 import urllib.request
-def connect(host='http://google.com'):
+def connect(host='http://google.com',host2='http://github.com'):
     try:
-        urllib.request.urlopen(host) 
+        urllib.request.urlopen(host) or urllib.request.urlopen(host2)
         return True
     except:
         return False
