@@ -12,7 +12,7 @@ top=Label(root,text='MODULE INSTALLER APP',font=('Helvetica', 18, 'bold'),fg="re
 l3=Label(root,text='ENTER THE NAME OF MODULE:').pack()
 e=Entry(root)
 e.pack()
-def bu():
+def perform():
    subprocess.run('python -m pip install --upgrade pip')#updating pip to latest version
    p= subprocess.run('pip3 install '+e.get())
    if(p.returncode==1 and connect()==False):
@@ -21,7 +21,7 @@ def bu():
       l=Label(root,text=' It worked '+e.get()+" is installed",fg="green" ).pack(side='bottom')
    elif(p.returncode==1 and connect()==True):
       l=Label(root,text='error!!! occured check\n 1.Name of module \n',fg="red").pack(side='bottom')
-b=Button(text="enter",command=bu)
+b=Button(text="enter",command=perform)
 b.pack()
 
 
