@@ -9,7 +9,7 @@ def connect(host='http://google.com',host2='http://github.com'):
     except:
         return False
 root=Tk()
-top=Label(root,text='MODULE INSTALLER APP',font=('Helvetica', 18, 'bold'),fg="red").pack()
+top=Label(root,text='MODULE INSTALLER APP',font=('Helvetica', 18, 'bold'),fg="blue").pack()
 l3=Label(root,text='ENTER THE NAME OF MODULE:').pack()
 e=Entry(root)
 e.pack()
